@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./css/slickstyle.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script> 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="your-class">
+        <div>
+            <img src="./image.jpg" width="100%" alt="">
+            your content1
+        </div>
+        <div>
+            <img src="./bmw.jpg" width="100%" alt="">
+            your content2
+        </div>
+        <div>
+            <img src="./bmw3.jpg" width="100%" alt="">
+            your content3
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.your-class').slick({
+                infinite: true,
+                slidesToShow : 2,
+                slidesToScroll : 3,
+                dots : true,
+                arrows: true,
+                centerMode: true, // 중앙 하나씪 지나감
+                // 시간지나면 화면 자동으로 움직임
+                autoplay: true,
+                autoplaySpeed: 500,
+            });
+        });
+    </script>
+
+</body>
+</html>
